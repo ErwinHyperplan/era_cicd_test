@@ -6,26 +6,23 @@ on:
       - main
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Python
+      - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x'  # Replace with your desired Python version
+          python-version: 3.9
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-        
-      - name: setup semantic-release
-        run: npm install -g semantic-release @semantic-release/git 
 
-      # - name: Install Semantic Release
-      #   run: pip install semantic-release
+      - name: setup semantic-release
+        run: npm install -g semantic-release @semantic-release/git
 
       - name: Run Semantic Release
         run: semantic-release
