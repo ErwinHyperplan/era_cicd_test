@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.4.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.3.0...v1.4.0) (2023-06-22)
+
+
+### Features
+
+* add dist .releaserc ([acf530c](https://github.com/ErwinHyperplan/era_cicd_test/commit/acf530c71985fd81e83b5f28097e40e496884a9e))
+
 # [1.3.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.2.1...v1.3.0) (2023-06-22)
 
 
