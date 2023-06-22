@@ -7,6 +7,7 @@ on:
 
 jobs:
   release:
+    name: Release
     runs-on: ubuntu-latest
 
     steps:
@@ -18,17 +19,30 @@ jobs:
         with:
           python-version: 3.9
         
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 18.x
 
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: setup semantic-release
-        # run: npm install -g semantic-release @semantic-release/git
-        run: npx -p node@v18-lts -c "npx semantic-release"
+      # - name: setup semantic-release
+        # run: npm install -g semantic-release @semantic-release/git
+        # run: npx -p node@v18-lts -c "npx semantic-release"
+        
+      - name: Install semantic-release extra plugins
+        run: npm install --save-dev @semantic-release/changelog @semantic-release/git    
 
-      - name: Run Semantic Release
-        run: semantic-release
+      # - name: Run Semantic Release
+       # run: semantic-release
+        
+      # - name: Build
+        # run: npm run build      
+        
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
+        
