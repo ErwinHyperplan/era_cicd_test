@@ -11,6 +11,10 @@ def bar():
     pass
 
 def mariot():
+    """
+    docstring
+    :return:
+    """
     pass
 
 
