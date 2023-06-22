@@ -16,7 +16,7 @@ def mariot():
     :return:
     """
     print('ok')
-    return 'ok'
+    return 'not ok'
 
 
 def print_hi(name):
