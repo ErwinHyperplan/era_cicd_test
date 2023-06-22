@@ -1,5 +1,19 @@
 # Semantic Versioning Changelog
 
+# [1.3.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.2.1...v1.3.0) (2023-06-22)
+
+
+### Bug Fixes
+
+* **main:** call fix diferent ([6759b2f](https://github.com/ErwinHyperplan/era_cicd_test/commit/6759b2f61b395e8764d6aaac1667908c6a13f132))
+* mariot check print ([35ecaad](https://github.com/ErwinHyperplan/era_cicd_test/commit/35ecaad3008c537e6525441ebf14186bd010d8a6))
+* mariot other return ([e224856](https://github.com/ErwinHyperplan/era_cicd_test/commit/e2248561375f1104acc619ec56fe9d93214224e3))
+
+
+### Features
+
+* mariot return ok ([2cebfb7](https://github.com/ErwinHyperplan/era_cicd_test/commit/2cebfb72f4e3d6c884a0ef84258418384536c88b))
+
 ## [1.2.1](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.2.0...v1.2.1) (2023-06-22)
 
 
