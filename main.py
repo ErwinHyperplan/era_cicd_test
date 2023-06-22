@@ -15,7 +15,7 @@ def mariot():
     docstring
     :return:
     """
-    pass
+    return 'ok'
 
 
 def print_hi(name):
