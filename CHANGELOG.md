@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.2.1](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.2.0...v1.2.1) (2023-06-22)
+
+
+### Bug Fixes
+
+* docs mariot string ([a2f88e8](https://github.com/ErwinHyperplan/era_cicd_test/commit/a2f88e89b7ab8ca1e085c9f75fb53e04af588034))
+
 # [1.2.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.1.0...v1.2.0) (2023-06-22)
 
 
