@@ -12,10 +12,13 @@ def bar():
 
 def mariot():
     """
+    blabla
     docstring
     :return:
     """
-    pass
+
+    print('not ok')
+    return 'not ok'
 
 
 def print_hi(name):
