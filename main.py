@@ -12,6 +12,7 @@ def bar():
 
 def mariot():
     """
+    blabla
     docstring
     :return:
     """
