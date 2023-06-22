@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.1.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.0.0...v1.1.0) (2023-06-22)
+
+
+### Features
+
+* add bar func ([d98e70f](https://github.com/ErwinHyperplan/era_cicd_test/commit/d98e70f14d7589a3e06103a1a93ead1b55756065))
+
 # 1.0.0 (2023-06-22)
 
 
