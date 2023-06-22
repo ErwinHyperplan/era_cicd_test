@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.2.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.1.0...v1.2.0) (2023-06-22)
+
+
+### Features
+
+* mariot def ([d727cd1](https://github.com/ErwinHyperplan/era_cicd_test/commit/d727cd15a06468ee7b1dd0ff0347d22eef9677cb))
+
 # [1.1.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.0.0...v1.1.0) (2023-06-22)
 
 
