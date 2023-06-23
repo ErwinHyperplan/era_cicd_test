@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.6.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.5.0...v1.6.0) (2023-06-23)
+
+
+### Features
+
+* commit demo ([d704dda](https://github.com/ErwinHyperplan/era_cicd_test/commit/d704dda78e62234daae1ada0b0b092d223d59ec2))
+
 # [1.5.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.4.0...v1.5.0) (2023-06-23)
 
 
