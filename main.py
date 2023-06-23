@@ -6,6 +6,9 @@
 def foo():
     pass
 
+def friday():
+    pass
+
 
 def bar():
     pass
