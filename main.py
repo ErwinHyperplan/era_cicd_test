@@ -7,6 +7,7 @@ def foo():
     pass
 
 def friday():
+    print('ok')
     pass
 
 
