@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.7.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.6.0...v1.7.0) (2023-06-26)
+
+
+### Features
+
+* remove friday ([bae1212](https://github.com/ErwinHyperplan/era_cicd_test/commit/bae12126b51c49e659562c9c16c927c477c1d953))
+
 # [1.6.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.5.0...v1.6.0) (2023-06-23)
 
 
