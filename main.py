@@ -7,6 +7,7 @@ def foo():
     pass
 
 def bar():
+    print('toto')
     pass
 
 def mariot():
