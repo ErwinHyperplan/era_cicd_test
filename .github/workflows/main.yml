@@ -17,7 +17,6 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
-    if: endsWith(github.ref, 'main') == true
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -34,3 +33,9 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
 
+  test:
+    if: endsWith(github.ref, 'devel') == true
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo The PR was merged
