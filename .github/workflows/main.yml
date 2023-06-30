@@ -3,11 +3,11 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - devel
+      - dev
       - main
   pull_request:
     branches:
-      - devel
+      - dev
 
 jobs:
   release:
@@ -26,11 +26,11 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Install semantic-release extra plugins
-        run: npm install --save-dev @semantic-release/changelog @semantic-release/git    
+        run: npm install --save-dev @semantic-release/changelog @semantic-release/git
 
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
-        
+
