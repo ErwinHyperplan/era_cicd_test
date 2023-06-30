@@ -8,7 +8,7 @@ def foo():
 
 def bar():
     print('toto')
-    # fokf
+    # fokfezrez
     pass
 
 def mariot():
