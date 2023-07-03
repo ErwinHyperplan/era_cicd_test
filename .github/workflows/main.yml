@@ -3,14 +3,32 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - devel
+      - dev
       - main
   pull_request:
     branches:
-      - devel
+      - dev
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - run: |
+          echo The TEST
+          
+
+  deploy-staging:
+    needs: test
+    if: endsWith(github.ref, 'dev') == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - run: |
+          echo DEPLOY STAGING 
+
   release:
+    needs: test
     name: Release
     runs-on: ubuntu-latest
     permissions:
@@ -21,16 +39,67 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
       - name: Install semantic-release extra plugins
-        run: npm install --save-dev @semantic-release/changelog @semantic-release/git    
-
+        run: npm install --save-dev @semantic-release/changelog @semantic-release/git
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
-        
+
+  deploy-prod:
+    needs: release
+    permissions:
+      id-token: write
+      contents: read
+    if: endsWith(github.ref, 'main') == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - run: |
+          echo The PR was merged
+
+
+# ##
+
+#name: CI/CD Pipeline
+#
+#on:
+#  push:
+#    branches:
+#      - dev
+#      - main
+#  pull_request:
+#    branches:
+#      - dev
+#
+#jobs:
+#  release:
+#    name: Release
+#    runs-on: ubuntu-latest
+#    permissions:
+#      contents: write
+#      issues: write
+#      pull-requests: write
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v2
+#
+#      - name: Install dependencies
+#        run: pip install -r requirements.txt
+#
+#      - name: Install semantic-release extra plugins
+#        run: npm install --save-dev @semantic-release/changelog @semantic-release/git
+#
+#      - name: Release
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+#        run: npx semantic-release
+#
+#  test:
+#    if: endsWith(github.ref, 'devel') == true
+#    runs-on: ubuntu-latest
+#    steps:
+#      - run: |
+#          echo The PR was merged
