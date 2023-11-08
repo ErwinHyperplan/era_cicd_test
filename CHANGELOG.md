@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.8.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.7.0...v1.8.0) (2023-11-08)
+
+
+### Features
+
+* test ([aadce18](https://github.com/ErwinHyperplan/era_cicd_test/commit/aadce18b5e6a48d86438b4995506e0ea7ed9a434)), closes [#26](https://github.com/ErwinHyperplan/era_cicd_test/issues/26) [#27](https://github.com/ErwinHyperplan/era_cicd_test/issues/27)
+
 # [1.7.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.6.0...v1.7.0) (2023-06-26)
 
 
