@@ -1,5 +1,22 @@
 # Semantic Versioning Changelog
 
+# [1.10.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.9.0...v1.10.0) (2023-11-08)
+
+
+### Bug Fixes
+
+* add test token ([91dc1fb](https://github.com/ErwinHyperplan/era_cicd_test/commit/91dc1fb7984271aa1b7dbed9210a6fb976290eec))
+* add test token 2 ([aebb2e8](https://github.com/ErwinHyperplan/era_cicd_test/commit/aebb2e87aa9a22c0c7183501518ae8151cc63e97))
+* change name ([20424e6](https://github.com/ErwinHyperplan/era_cicd_test/commit/20424e64c7213af1bffb3272cf86f2efaaac4ab4))
+* test on install ([f53c9c1](https://github.com/ErwinHyperplan/era_cicd_test/commit/f53c9c17a4bc40e55046120170218f7a1bb327b2))
+* test with ([752abae](https://github.com/ErwinHyperplan/era_cicd_test/commit/752abae31c2ec7617376d73e2d1cad2bbdaa0b20))
+* timeout ([2660076](https://github.com/ErwinHyperplan/era_cicd_test/commit/2660076e2e2f3f652f9d2f5c9bb16051e8895812))
+
+
+### Features
+
+* test 2 ([514788f](https://github.com/ErwinHyperplan/era_cicd_test/commit/514788f60f5ba5843b84997e729f5d05d30450dc))
+
 # [1.9.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.8.0...v1.9.0) (2023-11-08)
 
 
