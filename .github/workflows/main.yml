@@ -3,11 +3,11 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - devel
+      - dev
       - main
   pull_request:
     branches:
-      - devel
+      - dev
 
 jobs:
   test:
@@ -16,30 +16,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run tests
-        run: scripts/tests_ci.sh
-
+        run: scripts/tests_ci.sh          
 
   deploy-staging:
     needs: test
-    permissions:
-      id-token: write
-      contents: read
-    if: endsWith(github.ref, 'devel') == true
+    if: endsWith(github.ref, 'dev') == true
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: configure AWS creds
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-region: eu-west-3
-          role-to-assume: arn:aws:iam::931045011413:role/GithubRoleAccesForDeploy
-          role-session-name: github-actions-session
-      - name: Start CodePipeline
-        uses: moia-oss/aws-codepipeline-trigger@v1
-        with:
-          pipeline: staging-pipeline
-          wait: false
-          follow-codebuild: false
+      - run: |
+          echo DEPLOY STAGING 
 
   release:
     needs: test
@@ -82,6 +68,8 @@ jobs:
           pipeline: falco-pipeline
           wait: false
           follow-codebuild: false
+      - run: |
+          echo The PR was merged
 
 
 # ##
