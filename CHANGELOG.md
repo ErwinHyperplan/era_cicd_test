@@ -1,5 +1,22 @@
 # Semantic Versioning Changelog
 
+# [1.9.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.8.0...v1.9.0) (2023-11-08)
+
+
+### Bug Fixes
+
+* 1 ([25fdc76](https://github.com/ErwinHyperplan/era_cicd_test/commit/25fdc76d46493ed6bb8b8f6beb665a4f69fbd72c))
+* 3 ([#27](https://github.com/ErwinHyperplan/era_cicd_test/issues/27)) ([9a140bb](https://github.com/ErwinHyperplan/era_cicd_test/commit/9a140bbe7e8ef53cd489eeadca59686632290190))
+* test ([2449a22](https://github.com/ErwinHyperplan/era_cicd_test/commit/2449a227bb898450ae3d4dfcaf333180828f18d5))
+* test 1 ([193f5ab](https://github.com/ErwinHyperplan/era_cicd_test/commit/193f5abcb227935520b8bdc62a78a849baa6b91b))
+* workflow ([f56e7d3](https://github.com/ErwinHyperplan/era_cicd_test/commit/f56e7d325406cdb96dbf81456ed1023ec1f2b092))
+
+
+### Features
+
+* flow v2 ([9c724fd](https://github.com/ErwinHyperplan/era_cicd_test/commit/9c724fd4a1424050ea82542e56bcc3872c5ee97f))
+* test 1 ([a052e03](https://github.com/ErwinHyperplan/era_cicd_test/commit/a052e03cd1f2a5e5d4ac048751874a7e8f5e584e))
+
 # [1.8.0](https://github.com/ErwinHyperplan/era_cicd_test/compare/v1.7.0...v1.8.0) (2023-11-08)
 
 
