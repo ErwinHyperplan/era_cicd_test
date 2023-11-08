@@ -14,7 +14,7 @@ jobs:
   deploy-staging:
     if: endsWith(github.ref, 'dev') == true
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 3
     steps:
       - run: |
           echo DEPLOY STAGING 
@@ -45,7 +45,7 @@ jobs:
       contents: read
     if: endsWith(github.ref, 'main') == true
     runs-on: ubuntu-lst
-    timeout-minutes: 15
+    timeout-minutes: 3
     steps:
       - run: |
           echo DEPLOY STAGING 
