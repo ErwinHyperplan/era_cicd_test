@@ -44,7 +44,7 @@ jobs:
       id-token: write
       contents: read
     if: endsWith(github.ref, 'main') == true
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-lst
     timeout-minutes: 15
     steps:
       - run: |
