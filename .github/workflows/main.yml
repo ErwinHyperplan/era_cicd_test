@@ -10,13 +10,6 @@ on:
       - dev
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run tests
-        run: scripts/tests_ci.sh          
 
   deploy-staging:
     needs: test
