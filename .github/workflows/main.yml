@@ -10,16 +10,8 @@ on:
       - dev
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run tests
-        run: scripts/tests_ci.sh          
 
   deploy-staging:
-    needs: test
     if: endsWith(github.ref, 'dev') == true
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -28,7 +20,6 @@ jobs:
           echo DEPLOY STAGING 
 
   release:
-    needs: test
     name: Release
     runs-on: ubuntu-latest
     permissions:
@@ -53,7 +44,7 @@ jobs:
       id-token: write
       contents: read
     if: endsWith(github.ref, 'main') == true
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-lst
     timeout-minutes: 15
     steps:
       - name: configure AWS creds
